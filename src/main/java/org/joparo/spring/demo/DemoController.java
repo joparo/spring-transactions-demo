@@ -6,15 +6,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Demo av transaktionshantering i SpringBoot.
+ */
 @RestController
 @RequestMapping("/api/demo")
 public class DemoController {
 
     @Autowired
     DemoService service;
-
-    @Autowired
-    MightyService mightyService;
 
     @GetMapping("/success")
     public String sparaNoException() {

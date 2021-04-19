@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.NoSuchElementException;
 
+/**
+ * Demo med Content negotiation
+ * Returnerar Content-objektet som JSON eller XML beroende på vilken
+ * Accept-header som skickas av klienten.
+ */
 @RestController
 @RequestMapping("/api/content")
 public class ContentController {
